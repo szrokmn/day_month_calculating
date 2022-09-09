@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Fira+Sans:ital@1&family=Poppins:wght@100;300;400;500;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'DynaPuff', cursive;
+    transition: 0.2s ease;
+}
+body{    
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background: url(gezegen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#container{
+    background-color: rgba(127, 255, 212, 0.216);
+    width: 600px;
+    height: 650px;
+    border-radius: 40px;       
+}
+h1{
+    text-align: center;
+    margin: 40px;
+    color:rgba(255, 228, 196, 0.708);
+}
+span{
+    color:rgba(255, 140, 0, 0.692);
+}
+#date{
+    width: 250px;
+    height: 40px;
+    background-color:rgba(244, 165, 96, 0.526);
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin: 80px auto;   
+    
+}
+#gün, #ay{    
+    margin: 30px 50px;
+    padding: 7px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.604);
+}
+#gün1, #ay1{
+    display: flex;
+}
+#günsonuc, #aysonuc{
+    width: 220px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.543);
+    border-radius: 15px;
+    margin: 30px;
+    padding: 5px;
+    text-align: center;
+}
+#hesapla{
+    width: 120px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    margin:auto;
+    margin-top: 30px;
+    display: block;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.555);
+}
+#date:hover, #gün:hover, #günsonuc:hover, #ay:hover, #aysonuc:hover{
+    transform: scale(1.2);
+    cursor:pointer;
+}
+#hesapla:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color:rgba(205, 134, 63, 0.424) ;
+}
+#gün:focus, #ay:focus{
+    background-color:rgba(205, 134, 63, 0.424);
+    outline: none;
+    transform: scale(1.2);
+}
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    
+    /* Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
